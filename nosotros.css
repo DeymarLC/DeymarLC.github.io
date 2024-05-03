@@ -1,5 +1,5 @@
 .header {
-    background-color: #1e88e5;
+    background-color: #49aaff;
     color: #ffffff;
     padding: 20px;
     text-align: center;
@@ -50,7 +50,7 @@
 .section-vision-mision {
     padding: 100px 20px;
     text-align: center;
-    background-image: linear-gradient(to bottom right, #1e88e5, #64b5f6);
+    background-image: linear-gradient(to bottom right, #a3562d, #cefe0f);
     color: #ffffff;
 }
 
