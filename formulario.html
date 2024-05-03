@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title">FLOW BOLIVIA</h1>
+        <nav class="header-nav">
+            <ul class="header-nav-list">
+                <li class="header-nav-item"><a href="portada.html">Inicio</a></li>
+                <li class="header-nav-item"><a href="nosotros.html">Quiénes somos</a></li>
+                <li class="header-nav-item"><a href="productos.html">Productos</a></li>
+                <li class="header-nav-item"><a href="ofertas.html">Ofertas</a></li>
+                <li class="header-nav-item"><a href="formulario.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="formulario-section" class="formulario-section">
+        <h2 class="formulario-section-title">Formulario de Pedido y Consulta</h2>
+        <p class="formulario-section-description">Por favor, complete este formulario para realizar un pedido o enviar una consulta y nosotros nos contactaremos con usted.</p>
+
+        <form id="contact-form" action="/submit_form.php" method="post" class="formulario-section-form animate__animated animate__fadeInUp">
+            <div class="form-group">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" class="form-input" required>
+                <div class="invalid-feedback">Por favor ingrese su nombre.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="correo" class="form-label">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" class="form-input" required>
+                <div class="invalid-feedback">Por favor ingrese un correo electrónico válido.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="telefono" class="form-label">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" class="form-input">
+            </div>
+
+            <div class="form-group">
+                <label for="mensaje" class="form-label">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" class="form-textarea" rows="4" required></textarea>
+                <div class="invalid-feedback">Por favor ingrese un mensaje.</div>
+            </div>
+
+            <button type="submit" class="form-submit-button">Enviar</button>
+            <div class="form-status"></div>
+        </form>
+    </section>
+
+    <section id="map-section" class="map-section">
+        <h2 class="map-section-title">Ubicación</h2>
+        <h3 class="map-section-address">PARQUE INDUSTRIAL MZ3,SANTA CRUZ DE LA SIERRA </h3>
+        <div id="map" class="map-section-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3799.3556168920654!2d-63.14484762281851!3d-17.77497633144141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93f1e90d95da3f23%3A0xc9f76f0d86ce3030!2sValencia%20Citrus%20SRL.%20Santa%20Cruz!5e0!3m2!1ses-419!2sbo!4v1714442403263!5m2!1ses-419!2sbo"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer">
+        <p class="footer-text">Derechos reservados &copy; 2024 Flow Bolivia</p>
+        <div id="social-icons" class="footer-social-icons">
+            <a href="https://www.tiktok.com/@poneleflow?_t=8ll2o7ON1Er&_r=1"><img src="logo2.png" alt="TikTok"></a>
+            <a href="https://www.facebook.com/profile.php?id=100090981805707&mibextid=ZbWKwL"><img src="descarga.png"
+                    alt="Facebook"></a>
+            <a href="https://www.instagram.com/flowbolivia?igsh=MXE5ZnJveno4NTJ6Mw=="><img src="insta.png"
+                    alt="Instagram"></a>
+                    <a href="https://api.Whatsapp.com/send?phone=59171310175&text=Hola,quiero comprar" class="footer-social-link"><img src="wasapi.png" alt="Instagram"></a>
+        </div>
+    </footer>
+    <script src="formulario.js"></script>
+</body>
+</html>

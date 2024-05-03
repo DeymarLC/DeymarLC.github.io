@@ -1,0 +1,235 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background-color: #ff8c00;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeInDown 1s ease;
+}
+
+.header h1 {
+    font-size: 45px;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Pacifico', cursive;
+}
+
+.navegacion ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.navegacion ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.navegacion ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 22px;
+    transition: color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navegacion ul li a:hover {
+    color: #ff4500;
+}
+
+.seccion-promociones {
+    padding: 60px 20px;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #ff7f00, #ffd700);
+}
+
+.titulo-promociones {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    animation: fadeInUp 1s ease;
+}
+
+.promocion .imagen-promocion {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    padding: 2px;
+    margin: 20px;
+}
+
+.promocion .imagen-promocion:hover {
+    transform: translateY(-10px);
+}
+
+.promocion .info-promocion {
+    background-color: rgba(255, 165, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+    width: fit-content;
+}
+.info-promocion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.promocion .info-promocion:hover {
+    transform: translateY(-10px);
+}
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 35px;
+    }
+
+    .navegacion ul li a {
+        font-size: 18px;
+    }
+
+    .titulo-promociones {
+        font-size: 30px;
+    }
+
+    .promocion .info-promocion {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .agregar-carrito {
+        font-size: 14px;
+    }
+}
+
+.agregar-carrito {
+    background-color: #8990f4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.precio-original,
+.precio-descuento,
+.agregar-carrito {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.agregar-carrito {
+    background-color: #8990f4;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+}
+
+.agregar-carrito:hover {
+    background-color: #025b4d;
+    transform: scale(1.05);
+}
+
+#footer {
+    background-color: #ff4500;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#footer p {
+    color: #ffffff;
+    font-size: 18px;
+    margin: 0;
+}
+
+.iconos-sociales {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.iconos-sociales img {
+    width: 40px;
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+}
+
+.iconos-sociales img:hover {
+    transform: scale(1.2);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 78px) {
+    .header h1 {
+        font-size: 35px;
+    }
+
+    .navegacion ul li a {
+        font-size: 18px;
+    }
+
+    .titulo-promociones {
+        font-size: 30px;
+    }
+
+    .promocion .info-promocion {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .agregar-carrito {
+        font-size: 14px;
+    }
+    .info-promocion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: fit-content;
+    }
+}
